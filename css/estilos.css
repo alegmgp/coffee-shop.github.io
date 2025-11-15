@@ -1,0 +1,565 @@
+/******************************variables******************************/
+:root{
+   --font: 'Arial, Helvetica, sans-serif';
+   --backgroundWeb: white;
+   --backgroundNavbar: rgba(193, 175, 163, 0.986); 
+   --backgroundFooter: rgba(193, 175, 163, 0.986); 
+   --backgroundBtnIndex: rgba(193, 175, 163, 0.986); 
+   --backgrounBtnIndexHover: #734200;
+   --textoColorHover: #734200;
+   --textoEmpresa: #734200;
+   --textoColor: #006b73;                             
+   --textoLogo: #734200;
+   --textoFooter: #006b73;
+   --textoFooterTitulo: #734200;
+   --textoTitulo: #006b73;
+   --textoPrivacidad: #734200; 
+   --boxShadow: 6px 7px 13px 3px rgba(114, 113, 113, 0.555);     
+}
+
+
+/******************************estilos body****************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body{
+    font-family: var(--font);
+    font-size: 19px;
+    color: var(--textoColor);
+    background-color: var(--backgroundWeb);
+    line-height: 1.7;
+    padding: 20px;
+    
+}
+
+
+/************seccion navbar(logo, nombre empresa, background************/
+
+#navbarScroll{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.textoLogo{
+    color: var(--textoLogo);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Ari
+}
+
+.textoEmpresa{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--textoEmpresa);
+}
+
+.backgroundNavbar{
+    background-color: var(--backgroundNavbar);
+}
+
+.text-shadow {
+    text-shadow: 1px 2px rgba(10, 10, 10, 0.09);
+}
+/******************************estilos comunes*****************************/
+
+.textoTitulo{
+    color: var(--textoTitulo);
+
+}
+
+.textoColor{
+    color: var(--textoColor);  
+    font-weight: bolder; 
+}
+
+.textoColorActive{
+    color: var(--textoColorHover);   
+}
+
+.italic{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*contenedorImg comun a los bg de las diferentes vistas y a la img del formulario*/
+.contenedorImg{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+/***************************index*****************************************/
+
+.bgIndex{
+    background-image: url('./../assets/images/bgIndex/bgIndex.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    /*imagen bg fija al hacer scroll */
+    background-attachment: fixed;
+    /*  body tenga al menos la altura de la ventana */
+    min-height: 100vh; 
+   
+            
+}
+
+/*****banner*****/
+.banner_section {
+    background: url('./../assets/video/videoIndex/vecteezy_coffee-bean-transforming-into-a-steaming-cup-3d-animation_69663067.mp4');
+    padding: 100px 0;
+    width: 100%;
+    height: auto; 
+   
+} 
+
+.videoContenedor {
+    margin-top: 4.5rem;
+    position: relative; /* Necesario para que `position: absolute` del video funcione correctamente */
+    min-height: 750px;
+    
+   
+}
+
+.video-background {
+    position: absolute; /* Ocupa el espacio del contenedor padre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el área sin distorsión */
+    z-index: -1; /* para que esté debajo de los textos*/
+}
+
+.textoBanner{
+    margin-top: 13rem;
+}
+
+.btnIndex{
+    background-color: var(--backgroundBtnIndex);
+    border: 2px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.btnIndex:hover{
+    background-color: var(--backgrounBtnIndexHover);
+    color: var(--textoColor);
+    border: 2px solid var(--textoColor);
+    cursor:pointer;
+}
+
+/************CARDS SECCIONES***********/
+/*titulo cards comun a y emblaje*/
+.tituloCards{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/*común a párrafos café y embalaje*/
+.parrafoCards{
+    white-space: pre-line;
+   
+}
+
+/*****seccion card cafe y cards offers del Json********/
+
+.card{
+    border-radius: 5px;
+    border: 2px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    backdrop-filter: blur(10px);
+    background-color: #f5f5f552;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover{
+    cursor:pointer;
+    transform: scale(1.03);
+    border: 2px solid var(--textoColor);
+}
+
+.card-img-cafe, .card-im-offers{
+    height: 150px;
+    width: auto;
+    object-fit: cover;    
+}
+
+/*******card embalajes******/
+
+.cardEmbalaje{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    backdrop-filter: blur(10px);
+    background-color: #f5f5f552;
+    transition: all .3s ease-in-out; 
+
+}
+
+.cardEmbalaje:hover{
+    border: 2px solid var(--textoColor);
+}
+
+.cardEmbalajeImg{
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    object-fit: cover;  
+    border: 2px solid var(--textoLogo);    
+    transition: all .3s ease-in-out;  
+   
+}
+
+
+.cardEmbalajeImg:hover{
+    cursor:pointer;
+    transform: scale(1.3);
+    border: 2px solid var(--textoColor);    
+}
+
+
+/*******card extras******/
+
+.cardExtras{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    backdrop-filter: blur(10px);
+    background-color: #f5f5f552;
+}
+
+.cardExtras:hover{
+    border: 2px solid var(--textoColor);
+}
+
+.card-img-extras{
+    display: block; 
+    border: 2px solid var(--textoLogo);
+    border-radius: 5px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 10px;
+    height: auto;
+    width: 90%;
+    transition: all .3s ease-in-out;
+
+}
+
+.card-img-extras:hover{
+    cursor:pointer;
+    transform: scale(1.2);
+    border: 1px solid var(--textoColor);
+}
+
+
+/****************************seccion presupuesto****************************/
+
+.bgPresupuesto{
+    background-image: url('./../assets/images/imgPresupuesto/backgroundPresupuesto.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+            
+}
+
+.tituloPresupuesto {
+    color: var(--textoEmpresa);
+    margin-top: 5rem;
+    font-weight: bolder;
+
+}
+
+.contactoDatos{
+    backdrop-filter: blur(10px);
+    background-color: #f5f5f552;
+}
+
+
+.formularioContacto{
+    max-width: 650px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #734200; 
+    box-shadow: var(--boxShadow);
+    backdrop-filter: blur(10px);
+    background-color: #f5f5f552;
+    
+}
+
+.imgPresupuesto{
+    width: 650px;
+    height: 350px;
+    object-fit: cover; 
+}
+
+
+.form-control{
+   
+    box-shadow: var(--boxShadow);
+}
+
+
+/*privacidad checkbox y texto*/
+
+.textoPrivacidad{
+    color:var(--textoPrivacidad);
+    
+}
+
+#checkboxPrivacidad{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-color: var(--textoLogo);
+    
+}
+/*mensajes de error de validacion campos y de aceptar la privacidad de datos*/
+.error-message{
+    color: red;
+    font-size: 1.1rem;
+    /* margin-top: 6rem; */
+    text-align: center;
+
+}
+
+
+/*botones formulario contacto*/
+#btnEnviar{
+    color: var(--textoLogo);
+    border: 2px solid #734200;
+    box-shadow: 1px 2px  rgba(114, 113, 113, 0.555);
+    background: #006b73d0;
+    transition: all 0.2s ease-in-out;
+}
+
+#btnEnviar:hover{
+    transform: scale(1.1);
+}
+
+#btnBorrar{
+    color: var(--textoLogo);
+    border: 2px solid #734200;
+    box-shadow: 1px 2px  rgba(114, 113, 113, 0.555);
+    transition: all 0.2s ease-in-out;
+}
+
+#btnBorrar:hover{
+    transform: scale(1.1);
+}
+
+
+/*estilos error validacion**/
+
+.d-none {
+    display: none;
+} 
+
+
+/****************************seccion contacto*****************************/
+.bgContacto{
+    background-image: url('./../assets/images/bgContacto/bgContacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /*imagen bg fija al hacer scroll */
+    background-attachment: fixed;
+    /*  body tenga al menos la altura de la ventana */
+    min-height: 100vh;
+
+}
+
+
+.contacto1{ 
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--textoEmpresa);
+    margin-top: 4rem;    
+}
+
+
+#mapa {
+    margin-top: 1rem;
+    height: 460px;
+    max-width: 800px;
+    align-content: center;
+    border-radius: 10px;
+    border: 3px solid #734200;
+    box-shadow: var(--boxShadow);
+    
+} 
+
+#mapa:hover{
+    border: 3px solid var(--textoColor);
+}
+/****************************seccion galeria*******************************/
+
+
+.bgGaleria{
+    background-image: url('./../assets/images/imgGaleriaFondo/fondo_galeria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    /*imagen bg fija al hacer scroll */
+    background-attachment: fixed;
+    /*  body tenga al menos la altura de la ventana */
+    min-height: 100vh; 
+    
+}
+
+/*titulos galeria*/
+.galeria1{ 
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--textoEmpresa);
+    margin-top: 4rem;
+    backdrop-filter: blur(5px);    
+}
+
+
+.galeria2{ 
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--textoEmpresa);
+    margin-top: 0.5rem;
+    backdrop-filter: blur(5px);
+      
+}
+
+.galeria3{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--textoTitulo);
+    backdrop-filter: blur(5px);
+}
+
+.galeria4{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+
+/* carrusel*/
+
+.carousel {
+    max-width: 900px; 
+    margin: 0 auto; 
+
+}
+
+.imagen-carrusel {
+    height: auto; 
+    min-width: 200px; 
+    width: 600px;
+    object-fit: cover; 
+    border-radius: .5rem;
+    border: 3px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    
+}
+
+/* leyenda img del carrusel*/
+.carousel-caption p {
+    background-color: #734100d2; /* color empresa pero semitransparente */
+    color: var(--textoColor);
+    padding: 5px;
+   /* max-width: fit-content;  se descentra de la imagen*/
+    border-radius: .3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: black 1px 1px 2px;
+    margin-bottom: -3rem;
+    backdrop-filter: blur(10px);
+   
+}
+
+/*botones carrusel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--textoLogo);
+    border-radius: 50%; 
+    padding: 1rem;
+    height: 3rem; 
+    width: 3rem;
+}
+
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: var(--textoColor);
+    
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; 
+}
+
+/*videos galeria*/
+
+.videoGaleria{
+    border: 3px solid var(--textoLogo);
+    box-shadow: var(--boxShadow);
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.videoGaleria:hover{
+   cursor: pointer;
+   transform: scale(1.3);
+   border: 3px solid var(--textoColor);
+  
+}
+
+
+/****************************estilos footer*******************************/
+
+.textoFooterSinEfecto{
+    color: var(--textoFooter);
+    font-size: 20px;
+}
+.textoFooter{
+    color: var(--textoFooter);
+    font-size: 20px;
+}
+
+.textoFooter:hover{
+    color: var(--textoLogo);
+    cursor: pointer;
+}
+
+.textoFooterTitulo{
+    color:var(--textoLogo);
+    font-weight: bold;
+}
+.backgroundFooter{
+    background-color: var(--backgroundFooter);
+    
+}
+
+.iconosRedes{
+    font-size: 24px;        
+    color: var(--textoFooter);
+
+}
+

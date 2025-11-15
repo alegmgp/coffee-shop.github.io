@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+
+    <!--favicon-->
+    <link type="image/png" rel="icon" href="./../assets/logos/coffeShop_logo.png">
+
+    <!--bootstrap-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--estilos css-->
+    <link rel="stylesheet" href="./../css/estilos.min.css">
+
+    <!--css lightbox-->
+    <link rel="stylesheet" href="./../css/lightbox.min.css">
+
+</head>
+    
+<!-- The scrollable area -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0" class="d-flex flex-column min-vh-100 contenedorImg bgGaleria">
+
+    <header>  
+     <!--navbar bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-secondary fixed-top backgroundNavbar">
+            <div class="container">
+                <!-- <a class="navbar-brand textoEmpresa" href="#" disabled> -->
+                <img class="me-5" src="./../assets/logos/coffeShop_logo.png" alt="logotipo de la empresa Cofee-shop que es una taza de café" width="55" height="55"> 
+                <h2 class="mt-3 text-center textoEmpresa">COFFEE-SHOP</h2>
+                
+                <button class="navbar-toggler textoLogo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon textoLogo"></span>
+                </button>
+                <div class="collapse navbar-collapse textoLogo" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto textoLogo">
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link active textoLogo textoColorHover" href="./presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./galeria.html">Galeria</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+            
+    </header>
+   <main>
+    <!--carrusel 1 cultivo-->
+        <h1 class="galeria1 text-center text-shadow ">Galería de imagenes</h1>
+
+        <h2 class="galeria2 text-center text-shadow mt-5">Cultivo del café</h2>
+        <h2 class="galeria3 text-center italic text-shadow"> ¿Alguna vez te has preguntado como se cultiva el café?</h2>
+        <div class="container mt-4 mb-5">
+            <div id="carouselCultivo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        <a href="./../assets/images/cultivo/david-restrepo-p7xchIkJrJA-unsplash.jpg" data-lightbox="cultivo" data-title="Vista panorámica de cultivo de café en Brasil." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/david-restrepo-p7xchIkJrJA-unsplash.jpg" class="d-block imagen-carrusel" alt="Vista panorámica de cultivo de café en Brasil.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Vista panorámica de cultivo de café en Brasil.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/dhan-sugui-AgPj0maIEEs-unsplash.jpg" data-lightbox="cultivo" data-title="Detalle de cultivo de café" class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/dhan-sugui-AgPj0maIEEs-unsplash.jpg" class="d-block imagen-carrusel" alt="Detalle de cultivo de café">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Detalle de cultivo de café</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/souriish-ravindran-O3Tik-JJNaw-unsplash.jpg" data-lightbox="cultivo" data-title="Cultivo de café en Brasil." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/souriish-ravindran-O3Tik-JJNaw-unsplash.jpg" class="d-block imagen-carrusel" alt="Cultivo de café en Brasil.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Cultivo de café en Brasil.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/egle-sidaraviciute-RA0ulK_q67w-unsplash.jpg" data-lightbox="cultivo" data-title="Cultivo de café en Colombia." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/egle-sidaraviciute-RA0ulK_q67w-unsplash.jpg" class="d-block imagen-carrusel" alt="Cultivo de café en Colombia.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Cultivo de café en Colombia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/esteban-benites-VO0fNzSM-Z4-unsplash.jpg" data-lightbox="cultivo" data-title="Control del cultivo de café en Colombia." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/esteban-benites-VO0fNzSM-Z4-unsplash.jpg" class="d-block imagen-carrusel" alt="Control del cultivo de café en Colombia.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Control del cultivo de café en Colombia.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/paul-vincent-roll-c61jL_NpAn8-unsplash.jpg" data-lightbox="cultivo" data-title="Plantación de café en Colombia." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/paul-vincent-roll-c61jL_NpAn8-unsplash.jpg" class="d-block imagen-carrusel" alt="Plantación de café en Colombia.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Plantación de café en Colombia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/coffee-2540266_1280.jpg" data-lightbox="cultivo" data-title="Detalle del cultivo de café en Colombia." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/coffee-2540266_1280.jpg" class="d-block imagen-carrusel" alt="Detalle del cultivo de café en Colombia.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Detalle del cultivo de café en Colombia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/quang-nguyen-vinh-4RJnEyRTp8Y-unsplash.jpg" data-lightbox="cultivo" data-title="Detalle del cultivo." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/quang-nguyen-vinh-4RJnEyRTp8Y-unsplash.jpg" class="d-block imagen-carrusel" alt="Detalle del cultivo.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Detalle del cultivo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/coffee-2540277_1280.jpg" data-lightbox="cultivo" data-title="Detalle del cultivo de café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/coffee-2540277_1280.jpg" class="d-block imagen-carrusel" alt="Detalle del cultivo de café en Brasil.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Detalle del cultivo de café.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/cultivo/coffee-7839536_1280.jpg" data-lightbox="cultivo" data-title="Detalle del cultivo de café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/cultivo/coffee-7839536_1280.jpg" class="d-block imagen-carrusel" alt="Detalle del cultivo de café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Detalle del cultivo de café.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+ <!--botones carrusel1 cultivo-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCultivo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCultivo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+<!-- carrusel2 procesado-->
+        
+        <h2 class="galeria2 text-center text-shadow mt-5">Procesado del café</h2>
+        <h2 class="galeria3 text-center italic text-shadow"> ¿Quieres ver cómo se procesa?</h2>
+        <div class="container mt-4 mb-5">
+            <div id="carouselProcesado" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        <a href="./../assets/images/procesado/farming-6959637_1280.jpg" data-lightbox="procesado" data-title="Muestra de calidad" class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/farming-6959637_1280.jpg" class="d-block imagen-carrusel" alt="Muestra de calidad">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Muestra de calidad</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/jon-stanford-of3z4P80IwU-unsplash.jpg" data-lightbox="procesado" data-title="Muestra de calidad" class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/jon-stanford-of3z4P80IwU-unsplash.jpg" class="d-block imagen-carrusel" alt="Muestra de calidad">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Muestra de calidad</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/coffee-8406187_1280.jpg" data-lightbox="procesado" data-title="Proceso de tostado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/coffee-8406187_1280.jpg" class="d-block imagen-carrusel" alt="Proceso de tostado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de tostado.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/andrey-bond-iSAt1qAFt7Q-unsplash.jpg" data-lightbox="procesado" data-title="Proceso de tostado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/andrey-bond-iSAt1qAFt7Q-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de tostado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de tostado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/gregory-hayes-Jmc0PORTQ-A-unsplash.jpg" data-lightbox="procesado" data-title="Proceso de tostado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/gregory-hayes-Jmc0PORTQ-A-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de tostado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de tostado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/andrew-neel-66NjVBij7P8-unsplash.jpg" data-lightbox="procesado" data-title="Proceso de tostado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/andrew-neel-66NjVBij7P8-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de tostado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de tostado.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/tim-mossholder-P59xkC9zLIE-unsplash.jpg" data-lightbox="procesado" data-title="Procesode control de calidad." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/tim-mossholder-P59xkC9zLIE-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de control de calidad.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de control de calidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/zoshua-colah-Tputyf_-lwM-unsplash.jpg" data-lightbox="procesado" data-title="Proceso de tostado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/zoshua-colah-Tputyf_-lwM-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de tostado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de tostado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/battlecreek-coffee-roasters-ITQz7_GKCQQ-unsplash.jpg" data-lightbox="procesado" data-title="Procesode control de calidad." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/battlecreek-coffee-roasters-ITQz7_GKCQQ-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de control de calidad.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de control de calidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="./../assets/images/procesado/kwon-junho-r0Y7IHdVsw4-unsplash.jpg" data-lightbox="procesado" data-title="Proceso de control tostado y calidad" class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/procesado/kwon-junho-r0Y7IHdVsw4-unsplash.jpg" class="d-block imagen-carrusel" alt="Proceso de control tostado y calidad.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Proceso de control tostado y calidad</p>
+                        </div>
+                    </div>
+
+                </div>
+<!--botones carrusel 2 procesado-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProcesado" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProcesado" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+<!--carrusel imgenes 3 resultado-->
+        <h2 class="galeria2 text-center text-shadow mt-5">Resultado</h2>
+        <h2 class="galeria3 text-center italic text-shadow">Te mostramos el resultado final...listo para empaquetar y hacertelo llegar a casa!</h2>
+        <div class="container mt-4 mb-5">
+            <div id="carouselResultado" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="./../assets/images/resultado/vista-superior-de-accesorios-de-cafe-sobre-la-mesa.jpg" data-lightbox="resultado" data-title="Vista de diferentes cafés una vez finalizado el procesado." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/vista-superior-de-accesorios-de-cafe-sobre-la-mesa.jpg" class="d-block imagen-carrusel" alt="Vista de diferentes cafés una vez finalizado el procesado.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Vista de diferentes cafés una vez finalizado el procesado.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/a-c-XBsJBIKGdMo-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/a-c-XBsJBIKGdMo-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/milo-miloezger-rKYRJu0n06Y-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/milo-miloezger-rKYRJu0n06Y-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/nathan-dumlao-KixfBEdyp64-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/nathan-dumlao-KixfBEdyp64-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/sergey-kotenev-UK6tuYeWq-E-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/sergey-kotenev-UK6tuYeWq-E-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/sesha-reddy-kovvuri-NDGaRg2Mqtw-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/sesha-reddy-kovvuri-NDGaRg2Mqtw-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/coffee-4973654_1280.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/coffee-4973654_1280.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./../assets/images/resultado/adriaan-venner-scheepers-kQJp5l6fW0-unsplash.jpg" data-lightbox="resultado" data-title="Resultado del procesado del café." class="d-flex justify-content-center text-align-center">
+                            <img src="./../assets/images/resultado/adriaan-venner-scheepers-kQJp5l6fW0-unsplash.jpg" class="d-block imagen-carrusel" alt="Resultado del procesado del café.">
+                        </a>
+                        <div class="carousel-caption text-center">
+                            <p>Resultado del procesado del café.</p>
+                        </div>
+                    </div>
+
+                </div>
+<!--botones carrusel3 resultado-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselResultado" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselResultado" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+<!--galeria videos-->        
+        <h2 class="galeria1 text-center text-shadow ">Galería de vídeos</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item videoGaleria" src="https://www.youtube-nocookie.com/embed/UtbDaUMG9Qc?si=nxcR3rOBbLmRrmge" 
+                            title="Cultivo de café" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h5 class="galeria4 textoLogo text-shadow text-justify mt-2">Campo de cultivo de café</h5>
+                </div>
+
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item videoGaleria" src="https://www.youtube.com/embed/eJP-EfZ8H-o?si=wwQS2wXb721kZaOg" 
+                            title="Procedimiento de tostado de café" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h5 class="galeria4 textoLogo text-shadow text-justify mt-2">El proceso de tostado de café</h5>
+                </div>
+
+                <div class="col">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item videoGaleria" src="https://www.youtube-nocookie.com/embed/dHloF14nnV0?si=nKqes6Ttz9rzGjiZ" 
+                                title="Tostado de café" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h5 class="galeria4 textoLogo text-shadow text-justify mt-2">Proceso de tostado de café con detalle</h5>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    
+   
+    <footer class="mt-auto mb-0 w-100 pt-3 pb-3 px-4 d-flex flex-column">
+        <div class="container-fluid backgroundFooter position-absolute top-bottom-0 start-0 end-0">
+            <div class="row mt-3">
+                <!-- Información de la empresa -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Sobre Nosotros</h5>
+                    <p class="textoFooterSinEfecto">En Coffee-Shop nos dedicamos a ofrecerte, <span class="italic">el mejor café </span>,con envíos a todo el país.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./../index.html">
+                                <i class="bi bi-house-fill"></i> Inicio
+                            </a>
+                        </li>                  
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./presupuesto.html">
+                                <i class="bi bi-file-text-fill"></i> Presupuesto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./contacto.html">
+                                <i class="bi bi-envelope-fill"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./galeria.html">
+                                <i class="bi bi-file-earmark-image-fill"></i> Galería
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./../assets/documents/DocumentoPrivacidadDatos_Cofee-shop.pdf" target="_blank" rel="noopener noreferrer">                                   
+                                <i class="bi bi-shield-lock-fill textoFooter">Políticas de Privacidad y protección de datos.</i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="textoFooterSinEfecto"><i class="bi bi-geo-alt-fill"></i> C/Xxxxxxxxx, nº xx, xxxxxxxx(Madrid)</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-telephone-fill"></i> +34 91-000-00-00 // 600-00-00-00</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-envelope-fill"></i> contacto-coffee-shop@xxxx.com</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-3">            
+                    <div class="social-links">
+                    <h5 class="textoFooterTitulo text-shadow ">Síguenos en:</h5>
+                    <ul class="list-inline">
+                        
+                        <li class="list-inline-item"><a href="https://www.facebook.com/" class="textoFooter"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/" class="textoFooter"><i class="bi bi-twitter fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/" class="textoFooter"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item "><a href="https://www.linkedin.com/" class="textoFooter"><i class="bi bi-linkedin fs-4"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-md-12 text-center fs-bold">
+                    <p class="mb-0">&copy; 2025 Ecommerce. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!--script bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+
+</body>
+</html>

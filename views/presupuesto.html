@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+
+    <!--favicon-->
+    <link type="image/png" rel="icon" href="./../assets/logos/coffeShop_logo.png">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--estilos css-->
+    <link rel="stylesheet" href="./../css/estilos.min.css">
+
+</head>
+
+<!-- The scrollable area -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0" class="d-flex flex-column min-vh-100 m-0 p-0 contenedorImg bgPresupuesto">
+
+    <header>  
+     <!--navbar bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-secondary fixed-top backgroundNavbar">
+            <div class="container">
+                <!-- <a class="navbar-brand textoEmpresa" href="#" disabled> -->
+                <img class="me-5" src="./../assets/logos/coffeShop_logo.png" alt="logotipo de la empresa Cofee-shop que es una taza de café" width="60" height="57"> 
+                <h1 class="align-middle mt-3 textoEmpresa">COFFEE-SHOP</h1>
+                
+                <button class="navbar-toggler textoLogo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon textoLogo"></span>
+                </button>
+                <div class="collapse navbar-collapse textoLogo" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto textoLogo">
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link active textoLogo textoColorHover" href="./presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./galeria.html">Galeria</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+            
+    </header>
+    <main> 
+ <!--seccion para el presupuesto-->           
+        <section>
+            <h2 class="tituloPresupuesto text-center text-shadow ">¿Quieres obtener un presupuesto?</h2>
+            <h3 class="textoColor text-center fs-4 text-shadow ">Rellena este formulario y podrás saberlo.</h3>
+
+            <div class="container vw-90 d-flex justify-content-center align-items-center">
+            <form class="formularioContacto" id="formularioContacto" action="procesar-cotizacion.php" method="post" novalidate>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <img class="img-fluid imgPresupuesto" src="./../assets/images/imgPresupuesto/formulario_presupuesto_cafe.jpg" alt="Imagen de café en grano tostado" width="549" height="364">
+                    </div>
+                </div>
+
+                <div id="errorGlobalContainer" class="alert alert-danger d-none" role="alert">
+                    </div>
+<!--datos de contacto-->
+                <h3 class="textoLogo mt-1 mb-1 fs-2 text-center text-shadow ">Datos de contacto</h3>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-outline text-center"> 
+                            <label class="form-label fw-bold" for="inputName">Nombre:</label>
+                            <input type="text" class="form-control form-control-lg mb-2 text-center" id="inputName" name="inputName" placeholder="Indica tu nombre." required>
+                            <span class="error-message" id="errorName"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-outline text-center ">
+                            <label class="form-label fw-bold" for="inputSurname">Apellidos:</label>
+                            <input type="text" class="form-control form-control-lg mb-2 text-center" id="inputSurname" name="inputSurname" placeholder="Indica tus apellidos." required>
+                            <span class="error-message" id="errorSurname"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-outline mb-4 text-center ">
+                    <label class="form-label fw-bold" for="inputEmail">Correo electrónico:</label>
+                    <input type="email" class="form-control form-control-lg mb-2 text-center" id="inputEmail" name="inputEmail" placeholder="Indica tu email." required>
+                    <span class="error-message" id="errorEmail"></span>
+                </div>
+
+                <div class="form-outline text-center  mb-4">
+                    <label class="form-label fw-bold" for="inputPhone" >Teléfono:</label>
+                    <input type="tel" class="form-control form-control-lg mb-2 text-center" id="inputPhone" name="inputPhone" placeholder="Indica tu teléfono." required>
+                    <span class="error-message" id="errorPhone"></span>
+                </div>
+<!--solicitud presupuesto-->
+                <h3 class="textoLogo mt-1 mb-1 fs-2 text-center text-shadow ">Solicitud de Presupuesto</h3>
+<!--seleccion de productos cafe-->
+                <div class="form-outline mb-4" id="seleccion-cafe">
+                    <table class="textoColor fw-bold">
+                        <thead>
+                            <tr>
+                                <td colspan="4" class="textoLogo fw-bold text-shadow text-center">Selecciona tus cafés favoritos:</td> 
+                            </tr>
+                            <tr>
+                                <th class="text-center">Variedad de café:</th>
+                                <th>Precio</th>
+                                <th class="text-center">Unidades</th>
+                                <th>Total Parcial</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabla-productos">
+                            <tr data-precio="10.00">
+                                <td class="text-center">Libérica negro de Brasil.</td>
+                                <td><span class="currency">€</span>10,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="cafe_liberica_unidades" value="0" min="0"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            <tr data-precio="12.00">
+                                <td class="text-center">Robusta negro de colombia.</td>
+                                <td><span class="currency">€</span>12,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="cafe_robusta_unidades" value="0" min="0"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            <tr data-precio="11.00">
+                                <td class="text-center">Excelsa negro de colombia.</td>
+                                <td><span class="currency">€</span>11,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="cafe_excelsa_unidades" value="0" min="0"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            <tr data-precio="12.00">
+                                <td class="text-center">Arábica de Brasil.</td>
+                                <td><span class="currency">€</span>12,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="cafe_arabica_unidades" value="0" min="0"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            <tr data-precio="7.00">
+                                <td class="text-center">Descafeinado.</td>
+                                <td><span class="currency">€</span>7,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="cafe_descafeinado_unidades" value="0" min="0"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="4">
+                                    <span class="error-message" id="errorProductos"></span>
+                                </td>
+                            </tr>
+<!--seleccion tipo de envio y descuento-->                            
+                            <tr>
+                                <td colspan="4" class="textoLogo fw-bold text-shadow text-center">¿Cuándo quieres recibir tu envío?</td>
+                            </tr>
+                            <tr id="tabla-envios">
+                                <td colspan="4">
+                                    <select name="opciones-envios" id="opciones-envios" class="form-select textoColor text-center" required>
+                                        <option value ="">Selecciona un tipo de envío</option>
+                                        <option value="0.02">Envío ordinario de 3 a 5 días laborales -- 2% dto</option>
+                                        <option value="0.05">Envío ordinario de 6 a 9 días laborales -- 5% dto</option>
+                                        <option value="0.08">Envío ordinario de 10 a 15 días laborales -- 8% dto</option>
+                                        <option value="0.10">Envío ordinario de 15 a 20 días laborales --10% dto</option>
+                                    </select>
+                                    <span class="error-message" id="errorEnvios"></span>
+                                </td>
+                            </tr>
+<!--seleccion opcional extras-->
+
+                            <tr id="tabla-extras">
+                                <td colspan="4" class="textoLogo fw-bold text-shadow text-center">¿Quieres elegir algún tipo de extra?</td>
+                            </tr>
+                            <tr>
+                                <th class="text-center">Tipo de extra:</th>
+                                <th>Precio</th>
+                                <th class="text-center">Unidades</th>
+                                <th>Total parcial</th>
+                            </tr>
+                            
+                            <tr data-precio="0.50" id="tarjetaRegalo">
+                                <td class="text-center">Tarjeta y mensaje personalizado.</td>
+                                <td><span class="currency">€</span>0,50</td>
+                                <td><input type="number" class="form-control unidades text-center" name="extra_tarjeta_unidades" value="0" min="0" max="1"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            <tr data-precio="3.00" id="embalajeRegalo">
+                                <td class="text-center">Embalaje para regalo.</td>
+                                <td><span class="currency">€</span>3,00</td>
+                                <td><input type="number" class="form-control unidades text-center" name="extra_embalaje_unidades" value="0" min="0" max="1"></td>
+                                <td class="precio-total textoColor text-center"><span class="currency">€</span></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="4">
+                                    <span class="error-message" id="errorExtras"></span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+<!--total general presupuesto-->
+                    <tfoot>
+                            <tr class="textoLogo"> <td colspan="3" class="text-end"><strong>Total general:</strong></td>
+                                <td id="totalGeneral" class="textoLogo">€</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+<!--textarea comentarios adicionales-->               
+                <div class="form-outline mb-4">
+                    <h3 class="textoLogo fw-bold text-shadow text-center">Notas adicionales sobre tu solicitud de presupuesto:</h3>
+                    <label class="form-label" for="inputTextarea"></label>
+                    <textarea class="form-control text-center" id="inputTextarea" name="inputTextarea" rows="4" placeholder="Indica aquí tus comentarios adicionales para el presupuesto."></textarea>
+                    <span class="error-message" id="errortextarea"></span>
+                </div>
+<!--privacidad datos-->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8"> 
+                        <div class="form-check text-start check-privacidad-custom mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="checkboxPrivacidad" name="checkboxPrivacidad" required>
+                            <label class="form-check-label fw-bold" for="checkboxPrivacidad">
+                                He leído y acepto la 
+                                <a href="./../assets/documents/DocumentoPrivacidadDatos_Cofee-shop.pdf" class="textoPrivacidad italic">política de privacidad de datos</a>
+                            </label>
+                            <span class="error-message d-block" id="errorPrivacity"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+<!--botones formulario-->
+                <div class="row mb-6"> <div class="col-12 text-center">
+                        <button type="submit" data-mdb-ripple-init class="btn btn-block mb-4 fw-bold fs-5" id="btnEnviar">Enviar</button>
+                        <button type="reset" data-mdb-ripple-init class="btn btn-secondary btn-block mb-4 fw-bold fs-5" id="btnBorrar">Borrar</button>
+                    </div>
+                </div>
+
+            </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="mt-auto mb-0 w-100 pt-3 pb-3 px-4 d-flex flex-column">
+        <div class="container-fluid backgroundFooter position-absolute top-bottom-0 start-0 end-0">
+            <div class="row mt-3">
+                <!-- Información de la empresa -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Sobre Nosotros</h5>
+                    <p class="textoFooterSinEfecto">En Coffee-Shop nos dedicamos a ofrecerte, <span class="italic">el mejor café </span>,con envíos a todo el país.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./../index.html">
+                                <i class="bi bi-house-fill"></i> Inicio
+                            </a>
+                        </li>                  
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./presupuesto.html">
+                                <i class="bi bi-file-text-fill"></i> Presupuesto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./contacto.html">
+                                <i class="bi bi-envelope-fill"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./galeria.html">
+                                <i class="bi bi-file-earmark-image-fill"></i> Galería
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./../assets/documents/DocumentoPrivacidadDatos_Cofee-shop.pdf" target="_blank" rel="noopener noreferrer">                                   
+                                <i class="bi bi-shield-lock-fill textoFooter">Políticas de Privacidad y protección de datos.</i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="textoFooterSinEfecto"><i class="bi bi-geo-alt-fill"></i> C/Xxxxxxxxx, nº xx, xxxxxxxx(Madrid)</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-telephone-fill"></i> +34 91-000-00-00 // 600-00-00-00</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-envelope-fill"></i> contacto-coffee-shop@xxxx.com</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-3">            
+                    <div class="social-links">
+                    <h5 class="textoFooterTitulo text-shadow ">Síguenos en:</h5>
+                    <ul class="list-inline">
+                        
+                        <li class="list-inline-item"><a href="https://www.facebook.com/" class="textoFooter"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/" class="textoFooter"><i class="bi bi-twitter fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/" class="textoFooter"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/" class="textoFooter"><i class="bi bi-linkedin fs-4"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Ecommerce. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+        <!--script bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--script js-->
+        <script src="./../js/formularioPresupuesto.min.js"></script>
+        
+
+    </body>
+    </html>

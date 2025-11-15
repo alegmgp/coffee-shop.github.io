@@ -1,0 +1,109 @@
+{
+  "offers":[
+    {
+      "title": "Oferta en embalaje de regalo",
+      "duration": "Válido hasta el 30 de Diciembre",
+      "details": "Compra 3 kilos de cualquier variedad de café y llévate un embalaje de regalo gratis. No acumulable a otras ofertas.",
+      "image": "./assets/images/jsonImage/cajaRegaloJson.jpg"
+    },
+    {
+      "title": "Descuento por compra al por mayor.",
+      "duration": "No caduca. No acumulable a otras ofertas.",
+      "details": "Obtén un 10% de descuento EXTRA en compras superiores a 10 kilos de café. Solo con el código MAYOR10.",
+      "image": "./assets/images/jsonImage/compraMayor.jpg"
+    },
+    {
+      "title": "Envío gratuito.",
+      "duration": "Válido hasta el 15 de Enero.",
+      "details": "Disfruta de envío gratuito en todas las compras superiores a 5 kilos de café. No acumulable a la oferta de embalaje de regalo.",
+     "image": "./assets/images/jsonImage/envioGratis.jpg"
+    },
+    {
+      "title": "Pack prueba de nuestras variedades.",
+      "duration": "No caduca.No acumulable a otras ofertas.",
+      "details": "Pack Incio: Pack compuesto de todas las variedades en formato de 200gr cada una (total de 1kg) a un precio irresistible.",
+      "image": "./assets/images/jsonImage/packPrueba.jpg"
+    },  
+    {
+      "title": "Descuento para nuevos clientes.",
+      "duration": "Válido hasta el 30 de Diciembre.",
+      "details": "Obtén un 5% de descuento EXTRA en tu primera compra de café con el código NUEVO5.",
+      "image": "./assets/images/jsonImage/nuevoCliente.jpg"
+    },
+    {
+      "title": "Oferta especial de Invierno",
+      "duration": "Válido desde el 21 de Diciembre hasta el 20 de Marzo",
+      "details": "Disfruta de un 10% de descuento en todas las variedades de café durante la temporada invernal.",
+      "image": "./assets/images/jsonImage/invierno.jpg"
+    },
+    {
+      "title": "Oferta especial de Primavera",
+      "duration": "Válido del 21 de Marzo hasta el 20 de Junio",
+      "details": "Disfruta de un 15% de descuento en todas las variedades de café esta primavera.",  
+      "image": "./assets/images/jsonImage/primavera.jpg"
+    },
+    {
+      "title": "Oferta especial de Verano",
+      "duration": "Válido desde el 21 de Junio hasta el 22 de Septiembre",
+      "details": "Disfruta de un 15% de descuento en todas las variedades de café este verano.",
+      "image": "./assets/images/jsonImage/verano.jpg"
+    },
+    {
+      "title": "Oferta especial de Otoño",
+      "duration": "Válido desde el 23 de Septiembre hasta el 20 de Diciembre",
+      "details": "Este Otoño, disfruta de un 15% de descuento en todas las variedades de café.",
+      "image": "./assets/images/jsonImage/otono.jpg"
+    },
+    {
+      "title": "Especial San Valertín",
+      "duration": "Válido del 1' al 14 de Febrero",
+      "details": "Disfruta de un 20% de descuento en todas las variedades de café para compartir con tu persona especial.",
+      "image": "./assets/images/jsonImage/sanValentin.jpg"
+    },
+    {
+      "title": "Especial Día de la Madre",
+      "duration": "Válido del 1 al 7 de Mayo",
+      "details": "Disfruta de un 20% de descuento en todas las variedades de café para regalar a mamá.",
+      "image": "./assets/images/jsonImage/diaMadre.jpg"
+    },  
+    {
+      "title": "Especial Día del Padre",
+      "duration": "Válido del 1 al 19 de Marzo",
+      "details": "Disfruta de un 20% de descuento en todas las variedades de café para regalar a papá.",
+      "image": "./assets/images/jsonImage/diaPadre.jpg"
+    }
+  ],
+
+  "coffees": [
+    {
+      "name": "Cafe Libérica negro de Brasil",
+      "image": "IMGEN",
+      "description": "El café negro proveniente de cultivos en Brasil, con sabor a madera ahumada.",
+      "in-stock": true
+    },
+    {
+      "name": "Cafe Robusta negro de Colombia",
+      "image": "MGENa",
+      "description": "El café más fuerte, amargo e intenso para los amantes del café.",
+      "in-stock": true
+    },    
+    {
+      "name": "Cafe excelsa cultivado en Colombia",
+      "image": "MGEN",
+      "description": "Disfruta del café con sabor ácido y afrutado que tanto te gusta.",
+      "in-stock": true
+    },
+    {
+      "name": "Cafe Arábica de Brasil",
+      "image": "/MGEN",
+      "description": "Todo el sabor con menos cafeína.",
+      "in-stock": true
+    },
+    {
+      "name": "Cafe Descafeinado",
+      "image": "MGEN",
+      "description": "Para aquellos que no quieren disfrutar de todo el sabor pero sin cafeína.",
+      "in-stock": true
+    }
+  ]
+}

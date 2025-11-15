@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!--favicon-->
+    <link type="image/png" rel="icon" href="./assets/logos/coffeShop_logo.png">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--estilos css-->
+    <link rel="stylesheet" href="./css/estilos.min.css">
+</head>
+
+
+<!-- The scrollable area -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0" class="d-flex flex-column min-vh-100 contenedorImg bgIndex">
+
+    <header>  
+     <!--navbar bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-secondary fixed-top backgroundNavbar">
+            <div class="container">
+                <!-- <a class="navbar-brand textoEmpresa" href="#" disabled> -->
+                <img class="me-5" src="./assets/logos/coffeShop_logo.png" alt="logotipo de la empresa Coffee-shop que es una taza de café" width="60" height="57"> 
+                <h1 class="align-middle mt-3 textoEmpresa">COFFEE-SHOP</h1>
+                
+                <button class="navbar-toggler textoLogo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon textoLogo"></span>
+                </button>
+                <div class="collapse navbar-collapse textoLogo" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto textoLogo">
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./views/presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link active textoLogo textoColorHover" href="./views/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item textoLogo">
+                    <a class="nav-link textoLogo textoColorHover" href="./views/galeria.html">Galeria</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+            
+    </header>
+
+    <main> 
+
+
+<!-- Nuestros Cafés -->
+        <section>
+            <div class="container-fluid position-relative videoContenedor">
+                <video autoplay loop muted playsinline class="video-background">
+                    <source src="./assets/video/videoIndex/vecteezy_coffee-bean-transforming-into-a-steaming-cup-3d-animation_69663067.mp4" type="video/mp4">
+                </video>
+                <div class="content-overlay position-relative z-index-1">
+                    <div class="banner_section py-24 text-center w-full shadow-2xl">
+                        <div class="container mx-auto px-4">
+                            <div class="max-w-4xl mx-auto">
+                                <h2 class="text-5xl font-extrabold textoBanner textoEmpresa text-shadow tracking-wider leading-none mb-1 md:text-6xl">Coffee-Shop</h2>
+                                <h3 class="text-3xl font-light textoColor text-shadow mb-1 md:text-4xl">Nuestros cafés</h3>
+                                <p class="text-xl mb-10 textoColor max-w-2xl mx-auto">Descubre nuestras variedades de café en grano, la máxima calidad para tu hogar, oficina...donde lo desees. </p>
+                                <div class="learnmore_bt">
+                                    <a href="#seccion-cards-cafe" class="inline-block btnIndex textoColor text-decoration-none py-3 px-8 uppercase font-semibold rounded-lg transition duration-300 shadow-md">Nuestra selección de cafés</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--embalajes -->
+        <section>
+        <div class="container-fluid position-relative videoContenedor mt-2">
+            <video autoplay muted playsinline class="video-background">
+                <source src="./assets/video/videoIndex/small-vecteezy_a-coffee-bag-sitting-on-a-table-with-a-white-label_72283071_small.mp4" type="video/mp4">
+            </video>
+            <div class="content-overlay position-relative z-index-1">
+                <div class="banner_section py-24 text-center w-full rounded-b-xl shadow-2xl">
+                    <div class="container mx-auto px-4">
+                        <div class="max-w-4xl mx-auto">
+                            <h2 class="text-5xl font-extrabold textoBanner tracking-wider textoEmpresa text-shadow leading-none mb-2 md:text-6xl">Embalajes Coffee-Shop</h2>
+                            <h3 class="text-3xl font-light textoColor text-shadow mb-6 md:text-4xl">Nuestros embalajes</h3>
+                            <p class="text-xl mb-10 max-w-2xl textoColor mx-auto">Nuestros embalajes de papel con protector interior para conservar el máximo sabor y calidad de tu café.</p>
+                            <div class="learnmore_bt">
+                                <a href="#seccion-destino-embalaje" class="inline-block btnIndex textoColor text-decoration-none py-3 px-8 uppercase font-semibold rounded-lg transition duration-300 shadow-md">Nuestra selección de embalajes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+<!--cards cafe-->
+        <section id="seccion-cards-cafe">
+            <h2 class="text-center textoBanner tituloCards textoEmpresa text-shadow tracking-wider leading-none mb-1 md:text-6xl">Nuestra selección de cafés</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-2">
+            <div class="col">
+                <div class="card">
+                <img src="./assets/images/tiposCafe/libericaBrasil.jpg" class="card-img-cafe" alt="Café liberica negro de Brasil en grano" width="400" height="267">
+                <div class="card-body">
+                    <h5 class="text-center textoLogo">Libérica negro de Brasil</h5>
+                    <p class="textoColor text-justify parrafoCards px-3">Sabor: Notas afrutadas, florales y ahumadas, con un sabor que se describe a menudo como más dulce y con un regusto terroso y fuerte, a veces comparado con el del tabaco. 
+
+                    Aroma: Intenso y cautivador, puede variar de floral y afrutado a terroso y especiado.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="./assets/images/tiposCafe/robustaColombia.jpg" class="card-img-cafe" alt="Imagen de café en grano de Robusta negro de Colombia." width="400"
+                height="367">
+                <div class="card-body">
+                    <h5 class="text-center textoLogo">Robusta negro de Colombia</h5>
+                    <p class="textoColor text-justify parrafoCards px-3">Aroma y sabor: Se describe como intenso y robusto, con notas a cacao, nueces y a veces un toque a madera. Su sabor es notablemente más amargo y terroso que el del café Arábica.
+
+                    Cuerpo y acidez: Tiene un cuerpo denso y fuerte.
+
+                    Cafeína: Contiene un nivel de cafeína significativamente más alto que el Arábica.</p>     
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="./assets/images/tiposCafe/excelsaColombia.jpg" class="card-img-cafe" alt="Imagen café en grano Excelsa de Colombia">
+                <div class="card-body">
+                    <h5 class="text-center textoLogo">Excelsa de Colombia</h5>
+                    <p class="textoColor text-justify parrafoCards px-3">Sabor: Dulce, afrutado y con notas a nuez. A menudo se describe con toques de caramelo y cacao.
+
+                    Aroma: Intenso y pronunciado, a menudo con fragancias dulces y afrutadas.
+
+                    Cuerpo: Balanceado.
+
+                    Acidez: Pronunciada.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="./assets/images/tiposCafe/arabicaBrasil.jpg" class="card-img-cafe" alt="Imgaen de café Arábica en grano.">
+                <div class="card-body">
+                    <h5 class="text-center textoLogo">Arábica de Brasil</h5>
+                    <p class="textoColor text-justify parrafoCards px-3">Aroma: Suave, achocolatado y afrutado, a menudo con matices de frutos secos, nueces o avellanas.
+
+                    Sabor: Achocolatado y dulce, con notas de frutos secos como almendras y nueces, y un toque de madera.
+
+                    Acidez: Muy fina y de baja intensidad, lo que lo hace menos ácido que otras variedades de Arábica.
+
+                    Cuerpo: Intenso y estructurado, con una sensación en boca suave y cremosa.
+
+                    Retrogusto: Suave y prolongado, que deja un agradable sabor duradero.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="./assets/images/tiposCafe/descafeinado.jpg" class="card-img-cafe" alt="Imagen de café descafeinado en grano.">
+                <div class="card-body">
+                    <h5 class="text-center textoLogo">Descafeinado</h5>
+                    <p class="textoColor text-justify parrafoCards px-3">Similar al original: Busca preservar las características del café de origen, por lo que su sabor y aroma son parecidos a los del café con cafeína.
+
+                    Menor amargor: Al eliminar la cafeína, el café descafeinado tiende a ser menos amargo que su contraparte con cafeína.
+
+                    Potencialmente más suave: A veces, el sabor puede percibirse como más suave o menos intenso.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+<!--card embalaje-->
+        <section id="seccion-destino-embalaje">
+            <h2 class="text-center textoBanner tituloCards textoEmpresa text-shadow tracking-wider leading-none mb-1 md:text-6xl">Nuestros embalajes</h2>
+            <div class="container">
+                <div class="row justify-content-center"> 
+                    <div class="cardEmbalaje col-12 col-lg-10"> 
+                        
+                        <div class="d-flex justify-content-center flex-wrap mb-4"> 
+                            <img src="./assets/images/bagExtra/bagsVistas.jpg" class="cardEmbalajeImg" alt="Imagen embalaje bolsas de café en estantería" width="200" height="133">
+                            <img src="./assets/images/bagExtra/bag.jpeg" class="cardEmbalajeImg" alt="Imagen embalaje bolsas de café" width="200" height="133">
+                            <img src="./assets/images/bagExtra/bagInterior.jpg" class="cardEmbalajeImg" alt="Imagen interior embalaje bolsas de café" width="200" height="133">
+                        </div>
+
+                        <div class="cardEmbalajeBody">
+                            <h5 class="text-center textoLogo">Nuestros embalajes</h5>
+                            <p class="text-center textoColor parrafoCards">Nuestros embalajes cuentan con recubrimiento interior especial para mantener la calidad, el sabor y el aroma de nuestros productos.
+                            
+                            Están realizados de materiales 100% reciclados y son 100% recicables. Además disponen de "autocierre" que hacen más cómodo su uso.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--card para opciones EXTRAS:tarjeta y mensaje personalizado y embalaje de regalo-->
+        <section>
+            <h2 class="text-center textoBanner tituloCards textoEmpresa text-shadow md:text-6xl">¿Quieres personalizar tu pedido para regalo?</h2>
+            <h3 class="text-center textoBanner tituloCards textoColor text-shadow md:text-6xl mt-1">Te presentamos nuestras "opciones extras".</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="cardExtras">
+                        <img src="./assets/images/bagExtra/mensajePersonalizado.jpg" class="card-img-extras" alt="Imagen tarjeta con mensaje personalizado" width="400" height="267">
+                        <div class="card-body">
+                            <h5 class="text-center textoLogo">Tarjeta con mensaje personalizado</h5>
+                            <p class="textoColor text-justify parrafoCards px-5">Escribe tu mensaje para esa personal especial a la que haces el envío y se lo hacemos llegar en una tarjeta.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cardExtras">
+                        <img src="./assets/images/bagExtra/cajaRegalo.jpg" class="card-img-extras" alt="Imagen de caja de regalo para envío." width="400"
+                        height="367">
+                        <div class="card-body">
+                            <h5 class="text-center textoLogo">Embalaje especial regalo</h5>
+                            <p class="textoColor text-justify parrafoCards px-5">¿Quieres personalizar tu envío? Disponemos de embalajes para regalo.
+                            Hecho de materiales 100% reciclados y son 100% recicables.</p>     
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!--seccion cards JSON noticias-->
+            <section>
+                <h2 class="text-center textoBanner tituloCards textoEmpresa text-shadow tracking-wider leading-none mb-1 md:text-6xl">Nuestras ofertas</h2>
+                <div class="container" id="offers-container">
+                    
+                    <!-- Aquí se cargarán las ofertas pos Json -->
+                    
+                </div>
+            </section>
+
+    </main>
+ 
+    <footer class="mt-auto mb-0 w-100 pt-3 pb-3 px-4 d-flex flex-column">
+        <div class="container-fluid backgroundFooter position-absolute top-bottom-0 start-0 end-0">
+            <div class="row mt-3">
+                <!-- Información de la empresa -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Sobre Nosotros</h5>
+                    <p class="textoFooterSinEfecto">En Coffee-Shop nos dedicamos a ofrecerte, <span class="italic">el mejor café </span>,con envíos a todo el país.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./index.html">
+                                <i class="bi bi-house-fill"></i> Inicio
+                            </a>
+                        </li>                  
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./views/presupuesto.html">
+                                <i class="bi bi-file-text-fill"></i> Presupuesto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./views/contacto.html">
+                                <i class="bi bi-envelope-fill"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textoFooter" href="./views/galeria.html">
+                                <i class="bi bi-file-earmark-image-fill"></i> Galería
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./assets/documents/DocumentoPrivacidadDatos_Cofee-shop.pdf" target="_blank" rel="noopener noreferrer">                                   
+                                <i class="bi bi-shield-lock-fill textoFooter">Políticas de Privacidad y protección de datos.</i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="textoFooterTitulo text-shadow ">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="textoFooterSinEfecto"><i class="bi bi-geo-alt-fill"></i> C/Xxxxxxxxx, nº xx, xxxxxxxx(Madrid)</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-telephone-fill"></i> +34 91-000-00-00 // 600-00-00-00</li>
+                        <li class="textoFooterSinEfecto"><i class="bi bi-envelope-fill"></i> contacto-coffee-shop@xxxx.com</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-3">            
+                    <div class="social-links">
+                    <h5 class="textoFooterTitulo text-shadow ">Síguenos en:</h5>
+                    <ul class="list-inline">
+                        
+                        <li class="list-inline-item"><a href="https://www.facebook.com/" class="textoFooter"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/" class="textoFooter"><i class="bi bi-twitter fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/" class="textoFooter"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/" class="textoFooter"><i class="bi bi-linkedin fs-4"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Ecommerce. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!--script bootstrap-->
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--script json-->
+
+    <script src="./js/offersIndexJson.js"></script>
+
+</body>
+</html>
