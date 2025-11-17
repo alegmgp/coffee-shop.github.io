@@ -436,7 +436,7 @@ body{
 
 
 .galeria2{ 
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bolder;
     color: var(--textoEmpresa);
     margin-top: 0.5rem;
@@ -445,7 +445,7 @@ body{
 }
 
 .galeria3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     color: var(--textoTitulo);
     backdrop-filter: blur(5px);
@@ -467,8 +467,7 @@ body{
 }
 
 .imagen-carrusel {
-    height: auto; 
-    min-width: 200px; 
+    height: 400px; 
     width: 600px;
     object-fit: cover; 
     border-radius: .5rem;
@@ -477,18 +476,21 @@ body{
     
 }
 
-/* leyenda img del carrusel*/
-.carousel-caption p {
-    background-color: #734100d2; /* color empresa pero semitransparente */
-    color: var(--textoColor);
-    padding: 5px;
-   /* max-width: fit-content;  se descentra de la imagen*/
-    border-radius: .3rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: black 1px 1px 2px;
-    margin-bottom: -3rem;
+/* caption img del carrusel*/
+.caption {
+    background-color: transparent;
     backdrop-filter: blur(10px);
+    color: var(--textoColor);
+    width: 100%; /*del padre*/
+    height: 50px;
+    margin: 0 auto; /*centrar caption*/
+    margin-top: 0.2rem; /*separar de la imagen*/
+    padding-top: 0.2rem; /*bajar texto*/
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 2px solid var(--textoLogo);
+    text-shadow: black 1px 1px 2px;
+    box-shadow: var(--boxShadow);
    
 }
 
@@ -509,7 +511,6 @@ body{
     
 }
 
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%; 
@@ -518,6 +519,8 @@ body{
 /*videos galeria*/
 
 .videoGaleria{
+    width: 100%; /*dar ancho*/
+    height: 200px;
     border: 3px solid var(--textoLogo);
     box-shadow: var(--boxShadow);
     border-radius: .5rem;
@@ -531,6 +534,29 @@ body{
   
 }
 
+.captionVideo{
+    width: 100%; /*del padre*/
+    height: 50px;
+    margin: 0 auto; 
+    margin-top: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center; /* Centrar texto verticalmente */
+    justify-content: center; /* Centrar texto horizontalmente */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: var(--textoColor);
+    border: 2px solid var(--textoLogo);
+    text-shadow: black 1px 1px 2px;
+    box-shadow: var(--boxShadow);
+    
+}
+
+.captionVideo p {
+    margin: 0; /*quitar margen de parrafo*/
+}
+   
 
 /****************************estilos footer*******************************/
 
